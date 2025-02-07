@@ -1,16 +1,20 @@
 #include <iostream>
 #include <string>
-#include "complexe.h"
+#include "ComplRationn.h"
+
 
 using namespace std;
 
 int main()
 {
-    Complexe C1,C2,S;
-    C1.getChange();
-    C2.getChange();
+    
+    CRationn C1,C2,S;
+    C1.getData();//on obtient a+ib avec a rationnel et b rationnel
+    C2.getData();//on obtient c+id avec c rationnel et d rationnel
     S=C1.add(C2);
-    S.affichage();
+    S.display();
+
+
     return 0;
 
 }
